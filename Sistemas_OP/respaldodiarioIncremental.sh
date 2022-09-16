@@ -1,7 +1,8 @@
 #!/bin/bash
 fecha=(date +"%d-%m-%y")
 
-mkadir /etc/home/respaldodiario$fecha
+##CUIDADO EN EL COMANDO "mkdir"
+mkadir /etc/home/respaldodiario$fecha  
 
 cp /etc/passwd /etc/passwdBackup 
 gzip /etc/passwdBackup 
